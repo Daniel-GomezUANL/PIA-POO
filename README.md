@@ -5,7 +5,7 @@ Jorge Daniel Benavides Gómez Matrícula: 1931714
 
 Oscar Iván Salinas Jaramillo Matricula:
 
-Ingrid Valeria Cordero Elizondo Matricula:
+Ingrid Valeria Cordero Elizondo Matricula:1972274
 
 Introducción: ¿Cuál es la problemática o proceso que resolveremos o mejoraremos con una aplicación web?
 
