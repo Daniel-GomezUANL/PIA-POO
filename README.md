@@ -15,7 +15,7 @@ Ingrid Valeria Cordero Elizondo Matricula:1972274
 Introducción: ¿Cuál es la problemática o proceso que resolveremos o mejoraremos con una aplicación web?
 
 
-El Señor Pedro es un emprendedor de cerveza artesanal, registra sus ventas y su inventario en una libreta la cual a veces se le olvida recordar en donde el dejo y también a veces sus ventas no coinciden con el inventario.
+El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga una organización más avanzada mediante a este programa, para ello el programa tendrá distintas funcionalidades como la entrada y salida de productos, los costos de produccion, las ventas, lo que tiene en el inventario y entre otras cosas.
 
 ----------------------------------------------------------------------------------------------
 Propuesta técnica: ¿Qué entidades y funcionalidades ejecutarán la aplicación para proporcionar un servicio útil?
