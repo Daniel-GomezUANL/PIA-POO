@@ -15,20 +15,19 @@ Ingrid Valeria Cordero Elizondo Matricula:1972274
 Introducción: ¿Cuál es la problemática o proceso que resolveremos o mejoraremos con una aplicación web?
 
 
-El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga una organización más avanzada mediante a este programa, para ello el programa tendrá distintas funcionalidades como la entrada y salida de productos, los costos de produccion, las ventas, lo que tiene en el inventario y entre otras cosas.
+El Señor Pedro es un emprendedor de cerveza artesanal, registra sus ventas y su inventario en una libreta la cual a veces se le olvida recordar en donde el dejo y también a veces sus ventas no coinciden con el inventario.
 
-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
 Propuesta técnica: ¿Qué entidades y funcionalidades ejecutarán la aplicación para proporcionar un servicio útil?
 
-
-El programa tiene como función facilitarle al señor Pedro en tener un orden como la entrada, salida, la merma y con eso ya no tenga problemas con el inventariado.
-
+El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga una organización más avanzada mediante a este programa, para ello el programa tendrá distintas funcionalidades como la entrada y salida de productos, los costos de produccion, las ventas, lo que tiene en el inventario y entre otras cosas.
 
 entradaDatos() Es un método el cuál será útil para capturar la cantidad de productos que llegan al almacén.
 
 salidaDatos(). Método el cual consiste en registrar la salida de los productos del almacén.
 
-Merma(). Es una función la cual indica la cantidad de productos que caducaron.
+Merma(). Es una función que registra la perdida del producto.
 
 Stock(). Es la función que te indicará cuantos productos tienes en el almacén de una marca en específica.
 
