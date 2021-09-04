@@ -5,7 +5,7 @@ Nombre de los integrantes:
 
 Jorge Daniel Benavides Gómez Matrícula: 1931714
 
-Oscar Iván Salinas Jaramillo Matricula:
+Oscar Iván Salinas Jaramillo Matricula: 1928800
 
 Ingrid Valeria Cordero Elizondo Matricula:1972274
 
