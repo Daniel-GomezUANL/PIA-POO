@@ -1,4 +1,4 @@
-![Diagrama PIA](https://user-images.githubusercontent.com/88561226/132105209-ba5cd599-be7c-4f17-a3f0-88fd3f120f23.png)
+
 # Cerveza-Artesanal
 Avances del pia de POO
 
