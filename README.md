@@ -35,3 +35,4 @@ Recuperacion(). Esta función está orientada a indicar la cantidad de dinero qu
 
 Ganancias(). En este se reportan las ganancias que tuvo al vender los productos.
 
+![Diagrama de poo primer avanze](Imagenes/Diagrama.png)
