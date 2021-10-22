@@ -59,7 +59,6 @@ Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
 
 Se agrego la clase usuario con metodos privados como Int mStrock.
 
-Clase Main:
 
 
 
