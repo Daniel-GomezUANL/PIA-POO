@@ -59,7 +59,7 @@ Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
 
 Se agrego la clase usuario con metodos privados como Int mStrock.
 
-
+[![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
 
 
 
