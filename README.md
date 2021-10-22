@@ -40,5 +40,14 @@ Ganancias(). En este se reportan las ganancias que tuvo al vender los productos.
 ------------------------------------------------------------------------------------------------
 
 Listado de cambios  hechos en el repositorio:
+Clase Usuario:
+Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
+Se agrego la clase usuario con metodos privados como mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
 
-----------------------------------------------------------------------------------------------------------------------
+Clase Producto
+
+Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
+Se agrego la clase usuario con metodos privados como Double  mPrecio, mEnStock.
+
+
+
