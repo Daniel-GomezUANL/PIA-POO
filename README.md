@@ -38,7 +38,7 @@ Ganancias(). En este se reportan las ganancias que tuvo al vender los productos.
 ----------------------------------------------------------------------------------------------
 ![Diagrama PIA](https://user-images.githubusercontent.com/88561226/132105209-ba5cd599-be7c-4f17-a3f0-88fd3f120f23.png)
 ------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------------------------
 Listado de cambios  hechos en el repositorio:
 
 Clase Usuario:
@@ -50,6 +50,15 @@ Clase Producto
 
 Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
 Se agrego la clase usuario con metodos privados como Double  mPrecio, mEnStock.
+
+Clase Encuesta:
+
+Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
+Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
+Se agrego la clase usuario con metodos privados como Int mStrock.
+
+Clase Main:
+
 
 
 
