@@ -1,0 +1,43 @@
+
+package inventariodetienda;
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static String mUsuario;
+    public static String mPass;
+
+    public static boolean mEsVendedor;
+    public static boolean mEsAdmin;
+
+    public static ArrayList<Usuario> mListaDeUsuarios = new ArrayList();
+    public static ArrayList<Producto> mListaDeProductos = new ArrayList();
+
+    public static void main(String[] args) {
+
+        ArrayList<String> mListaDeRoles = new ArrayList();
+
+        mListaDeRoles.add("Administrador");
+        mListaDeRoles.add("Vendedor");
+
+        Usuario usuario1 = new Usuario();
+        usuario1.setNombre("Daniel");
+        usuario1.setPass("Gomez");
+        usuario1.setCorreoElectronico("rmolinah@gmail.com");
+        usuario1.setListaRoles(mListaDeRoles);
+        usuario1.setHizoEncuestaExperiencia(false);
+        usuario1.setHizoEncuestaPersonal(false);
+
+        mListaDeRoles = new ArrayList();
+        mListaDeRoles.add("Administrador");
+
+        //Vamos a agregar el usuario por defecto a la lista de usuarios (este siempre va a existir que se ejecute el programa)
+        mListaDeUsuarios.add(usuario1); //Tiene el rol de administrador y vendedor
+
+        FrmLogin login = new FrmLogin();
+        login.setVisible(true);
+
+    }
+
+}
