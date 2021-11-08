@@ -1,0 +1,237 @@
+
+package inventariodetienda;
+
+import java.util.Iterator;
+import javax.swing.JOptionPane;
+
+
+public class FrmLogin extends javax.swing.JFrame {
+
+    
+    public FrmLogin() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+        
+       
+    }           
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jColorChooser1 = new javax.swing.JColorChooser();
+        jColorChooser2 = new javax.swing.JColorChooser();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        pnlBlanco = new javax.swing.JPanel();
+        lblUsuario = new javax.swing.JLabel();
+        lblPass = new javax.swing.JLabel();
+        txtUsuario = new javax.swing.JTextField();
+        btnIngresar = new javax.swing.JButton();
+        pnlAzul = new javax.swing.JPanel();
+        txtPass = new javax.swing.JPasswordField();
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inicio de sesión");
+        setName("Inicio de sesion"); // NOI18N
+
+        pnlBlanco.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblUsuario.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblUsuario.setText("Usuario");
+
+        lblPass.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblPass.setText("Contraseña");
+
+        txtUsuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btnIngresar.setBackground(new java.awt.Color(255, 255, 255));
+        btnIngresar.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        btnIngresar.setText("Ingresar");
+        btnIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarActionPerformed(evt);
+            }
+        });
+
+        pnlAzul.setBackground(new java.awt.Color(0, 102, 102));
+
+        javax.swing.GroupLayout pnlAzulLayout = new javax.swing.GroupLayout(pnlAzul);
+        pnlAzul.setLayout(pnlAzulLayout);
+        pnlAzulLayout.setHorizontalGroup(
+            pnlAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 51, Short.MAX_VALUE)
+        );
+        pnlAzulLayout.setVerticalGroup(
+            pnlAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        txtPass.setToolTipText("");
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPassActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnlBlancoLayout = new javax.swing.GroupLayout(pnlBlanco);
+        pnlBlanco.setLayout(pnlBlancoLayout);
+        pnlBlancoLayout.setHorizontalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addComponent(pnlAzul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnIngresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPass))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                            .addComponent(txtPass))))
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+        pnlBlancoLayout.setVerticalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPass)
+                    .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(pnlAzul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pnlAzul.getAccessibleContext().setAccessibleParent(pnlAzul);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlBlanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+
+        obtenerCredenciales();
+
+        //Previo a comprobar roles
+        boolean puedeEntrar = this.comprobarCredenciales();
+
+        if (puedeEntrar) {
+
+          FrmMenuPrincipal frmMenuPrincipal = new FrmMenuPrincipal();
+          frmMenuPrincipal.setVisible(true);
+          this.dispose();
+          
+        } else {
+            JOptionPane.showMessageDialog(this, "Usuario no existe o contraseña es incorrecta.");
+        }
+
+       
+
+    }                                           
+
+    private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+    }                                       
+
+    
+    public static void main(String args[]) {
+       
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrmLogin().setVisible(true);
+            }
+        });
+    }
+
+    private boolean comprobarCredenciales() {
+
+        //Recorrer la lista de usuarios para ver que el usuario exista y pueda ingresar al sistema
+        boolean credencialesCorrectas = false;
+        Main.mEsVendedor = false;
+        Main.mEsAdmin = false;
+
+        Iterator<Usuario> iterador = Main.mListaDeUsuarios.iterator();
+
+        while (iterador.hasNext()) {
+
+            Usuario tmpUsuario = iterador.next();
+            
+
+            //   Rose             .equals (mUsuario) &&   Rose             .equals (mPass)
+            if (tmpUsuario.getNombre().equals(Main.mUsuario) && tmpUsuario.getPass().equals(Main.mPass)) {
+                
+                Iterator<String> iteradorRol = tmpUsuario.getListaRoles().iterator();
+
+                while (iteradorRol.hasNext()) {
+
+                    String tmpRol = iteradorRol.next();                    
+
+                    if (tmpRol.equals("Administrador")) {
+
+                        Main.mEsAdmin = true;
+
+                    } else if (tmpRol.equals("Vendedor")) {
+
+                        Main.mEsVendedor = true;
+                    }
+                }
+
+                credencialesCorrectas = true;
+                break;
+
+            }
+        }
+
+        return credencialesCorrectas;
+
+    }
+
+    private void obtenerCredenciales() {
+
+        //Obtener usuario y contraseña
+        Main.mUsuario = txtUsuario.getText();
+        Main.mPass = new String(txtPass.getPassword());
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton btnIngresar;
+    private javax.swing.JColorChooser jColorChooser1;
+    private javax.swing.JColorChooser jColorChooser2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JLabel lblPass;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JPanel pnlAzul;
+    private javax.swing.JPanel pnlBlanco;
+    private javax.swing.JPasswordField txtPass;
+    private javax.swing.JTextField txtUsuario;
+    // End of variables declaration                   
+}
