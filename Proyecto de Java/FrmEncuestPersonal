@@ -1,0 +1,495 @@
+
+package inventariodetienda;
+
+import static inventariodetienda.Main.mListaDeUsuarios;
+import java.awt.Color;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Iterator;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+
+public class FrmEncuestaPersonal extends javax.swing.JFrame {
+
+    Encuesta mEncuesta = new Encuesta();
+
+    
+    public FrmEncuestaPersonal() {
+        initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+        //Asociar los grupos de option box a un button group
+        //Asociar del opt1 al opt5 al grupo 1
+        this.btnGroup1.add(opt1);
+        this.btnGroup1.add(opt2);
+        this.btnGroup1.add(opt3);
+        this.btnGroup1.add(opt4);
+        this.btnGroup1.add(opt5);
+
+        //Asociar del opt6 al opt10 al grupo 2
+        this.btnGroup2.add(opt6);
+        this.btnGroup2.add(opt7);
+        this.btnGroup2.add(opt8);
+        this.btnGroup2.add(opt9);
+        this.btnGroup2.add(opt10);
+
+        //Asociar del opt11 al opt15 al grupo 3
+        this.btnGroup3.add(opt11);
+        this.btnGroup3.add(opt12);
+        this.btnGroup3.add(opt13);
+        this.btnGroup3.add(opt14);
+        this.btnGroup3.add(opt15);
+
+        btnEnviar.setBackground(Color.white);
+
+        mEncuesta.setNombre("Personal");
+
+        mEncuesta.setPregunta1("¿Considera que la universidad es un lugar para aprender?");
+        mEncuesta.setPregunta2("¿Considera que estudiando Ingenieria en Ciencias y Sistemas, hará de un mundo mejor?");
+        mEncuesta.setPregunta3("¿Considera que sabe resolver problemas y trasladarlos a un lenguaje de programación?");
+
+        this.lblPregunta1.setText(mEncuesta.getPregunta1());
+        this.lblPregunta2.setText(mEncuesta.getPregunta2());
+        this.lblPregunta3.setText(mEncuesta.getPregunta3());
+        this.btnEnviar.setEnabled(true);
+
+    }
+
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        btnGroup1 = new javax.swing.ButtonGroup();
+        btnGroup2 = new javax.swing.ButtonGroup();
+        btnGroup3 = new javax.swing.ButtonGroup();
+        btnGroup4 = new javax.swing.ButtonGroup();
+        btnGroup5 = new javax.swing.ButtonGroup();
+        panelBlanco = new javax.swing.JPanel();
+        pnlAqua = new javax.swing.JPanel();
+        lblBienvenido = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblPregunta1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lblPregunta2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        lblPregunta3 = new javax.swing.JLabel();
+        btnEnviar = new javax.swing.JButton();
+        pnlPregunta1 = new javax.swing.JPanel();
+        opt1 = new javax.swing.JRadioButton();
+        opt2 = new javax.swing.JRadioButton();
+        opt3 = new javax.swing.JRadioButton();
+        opt4 = new javax.swing.JRadioButton();
+        opt5 = new javax.swing.JRadioButton();
+        pnlPregunta2 = new javax.swing.JPanel();
+        opt6 = new javax.swing.JRadioButton();
+        opt7 = new javax.swing.JRadioButton();
+        opt8 = new javax.swing.JRadioButton();
+        opt9 = new javax.swing.JRadioButton();
+        opt10 = new javax.swing.JRadioButton();
+        pnlPregunta3 = new javax.swing.JPanel();
+        opt11 = new javax.swing.JRadioButton();
+        opt12 = new javax.swing.JRadioButton();
+        opt13 = new javax.swing.JRadioButton();
+        opt14 = new javax.swing.JRadioButton();
+        opt15 = new javax.swing.JRadioButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Encuesta");
+
+        panelBlanco.setBackground(new java.awt.Color(255, 255, 255));
+
+        pnlAqua.setBackground(new java.awt.Color(0, 102, 102));
+
+        javax.swing.GroupLayout pnlAquaLayout = new javax.swing.GroupLayout(pnlAqua);
+        pnlAqua.setLayout(pnlAquaLayout);
+        pnlAquaLayout.setHorizontalGroup(
+            pnlAquaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 51, Short.MAX_VALUE)
+        );
+        pnlAquaLayout.setVerticalGroup(
+            pnlAquaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        lblBienvenido.setFont(new java.awt.Font("Perpetua", 0, 48)); // NOI18N
+        lblBienvenido.setText("Encuesta");
+
+        jLabel1.setText("1. ");
+
+        lblPregunta1.setText("jLabel2");
+
+        jLabel2.setText("2.");
+
+        lblPregunta2.setText("jLabel2");
+
+        jLabel3.setText("3.");
+
+        lblPregunta3.setText("jLabel2");
+
+        btnEnviar.setBackground(new java.awt.Color(255, 255, 255));
+        btnEnviar.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        btnEnviar.setText("Enviar");
+        btnEnviar.setEnabled(false);
+        btnEnviar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnviarActionPerformed(evt);
+            }
+        });
+
+        pnlPregunta1.setBackground(new java.awt.Color(255, 255, 255));
+
+        opt1.setBackground(new java.awt.Color(255, 255, 255));
+        opt1.setText("1");
+        opt1.setActionCommand("\"1\"");
+
+        opt2.setBackground(new java.awt.Color(255, 255, 255));
+        opt2.setText("2");
+        opt2.setActionCommand("\"2\"");
+
+        opt3.setBackground(new java.awt.Color(255, 255, 255));
+        opt3.setText("3");
+        opt3.setActionCommand("\"3\"");
+
+        opt4.setBackground(new java.awt.Color(255, 255, 255));
+        opt4.setText("4");
+        opt4.setActionCommand("\"4\"");
+
+        opt5.setBackground(new java.awt.Color(255, 255, 255));
+        opt5.setText("5");
+        opt5.setActionCommand("\"5\"");
+
+        javax.swing.GroupLayout pnlPregunta1Layout = new javax.swing.GroupLayout(pnlPregunta1);
+        pnlPregunta1.setLayout(pnlPregunta1Layout);
+        pnlPregunta1Layout.setHorizontalGroup(
+            pnlPregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPregunta1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(opt1)
+                .addGap(35, 35, 35)
+                .addComponent(opt2)
+                .addGap(36, 36, 36)
+                .addComponent(opt3)
+                .addGap(33, 33, 33)
+                .addComponent(opt4)
+                .addGap(36, 36, 36)
+                .addComponent(opt5)
+                .addContainerGap(90, Short.MAX_VALUE))
+        );
+        pnlPregunta1Layout.setVerticalGroup(
+            pnlPregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPregunta1Layout.createSequentialGroup()
+                .addGap(0, 11, Short.MAX_VALUE)
+                .addGroup(pnlPregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1)
+                    .addComponent(opt2)
+                    .addComponent(opt3)
+                    .addComponent(opt4)
+                    .addComponent(opt5)))
+        );
+
+        pnlPregunta2.setBackground(new java.awt.Color(255, 255, 255));
+
+        opt6.setBackground(new java.awt.Color(255, 255, 255));
+        opt6.setText("1");
+        opt6.setActionCommand("\"1\"");
+
+        opt7.setBackground(new java.awt.Color(255, 255, 255));
+        opt7.setText("2");
+        opt7.setActionCommand("\"2\"");
+
+        opt8.setBackground(new java.awt.Color(255, 255, 255));
+        opt8.setText("3");
+        opt8.setActionCommand("\"3\"");
+
+        opt9.setBackground(new java.awt.Color(255, 255, 255));
+        opt9.setText("4");
+        opt9.setActionCommand("\"4\"");
+
+        opt10.setBackground(new java.awt.Color(255, 255, 255));
+        opt10.setText("5");
+        opt10.setActionCommand("\"5\"");
+
+        javax.swing.GroupLayout pnlPregunta2Layout = new javax.swing.GroupLayout(pnlPregunta2);
+        pnlPregunta2.setLayout(pnlPregunta2Layout);
+        pnlPregunta2Layout.setHorizontalGroup(
+            pnlPregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPregunta2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(opt6)
+                .addGap(35, 35, 35)
+                .addComponent(opt7)
+                .addGap(36, 36, 36)
+                .addComponent(opt8)
+                .addGap(33, 33, 33)
+                .addComponent(opt9)
+                .addGap(36, 36, 36)
+                .addComponent(opt10)
+                .addContainerGap(90, Short.MAX_VALUE))
+        );
+        pnlPregunta2Layout.setVerticalGroup(
+            pnlPregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPregunta2Layout.createSequentialGroup()
+                .addGap(0, 2, Short.MAX_VALUE)
+                .addGroup(pnlPregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt6)
+                    .addComponent(opt7)
+                    .addComponent(opt8)
+                    .addComponent(opt9)
+                    .addComponent(opt10)))
+        );
+
+        pnlPregunta3.setBackground(new java.awt.Color(255, 255, 255));
+
+        opt11.setBackground(new java.awt.Color(255, 255, 255));
+        opt11.setText("1");
+        opt11.setActionCommand("\"1\"");
+
+        opt12.setBackground(new java.awt.Color(255, 255, 255));
+        opt12.setText("2");
+        opt12.setActionCommand("\"2\"");
+
+        opt13.setBackground(new java.awt.Color(255, 255, 255));
+        opt13.setText("3");
+        opt13.setActionCommand("\"3\"");
+
+        opt14.setBackground(new java.awt.Color(255, 255, 255));
+        opt14.setText("4");
+        opt14.setActionCommand("\"4\"");
+
+        opt15.setBackground(new java.awt.Color(255, 255, 255));
+        opt15.setText("5");
+        opt15.setActionCommand("\"5\"");
+
+        javax.swing.GroupLayout pnlPregunta3Layout = new javax.swing.GroupLayout(pnlPregunta3);
+        pnlPregunta3.setLayout(pnlPregunta3Layout);
+        pnlPregunta3Layout.setHorizontalGroup(
+            pnlPregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPregunta3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(opt11)
+                .addGap(35, 35, 35)
+                .addComponent(opt12)
+                .addGap(36, 36, 36)
+                .addComponent(opt13)
+                .addGap(33, 33, 33)
+                .addComponent(opt14)
+                .addGap(36, 36, 36)
+                .addComponent(opt15)
+                .addContainerGap(90, Short.MAX_VALUE))
+        );
+        pnlPregunta3Layout.setVerticalGroup(
+            pnlPregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPregunta3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(pnlPregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt11)
+                    .addComponent(opt12)
+                    .addComponent(opt13)
+                    .addComponent(opt14)
+                    .addComponent(opt15)))
+        );
+
+        javax.swing.GroupLayout panelBlancoLayout = new javax.swing.GroupLayout(panelBlanco);
+        panelBlanco.setLayout(panelBlancoLayout);
+        panelBlancoLayout.setHorizontalGroup(
+            panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelBlancoLayout.createSequentialGroup()
+                .addComponent(pnlAqua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelBlancoLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelBlancoLayout.createSequentialGroup()
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblPregunta2)
+                                    .addComponent(pnlPregunta2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(panelBlancoLayout.createSequentialGroup()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pnlPregunta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblPregunta1)))
+                            .addGroup(panelBlancoLayout.createSequentialGroup()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pnlPregunta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblPregunta3)
+                                    .addComponent(btnEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 60, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBlancoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(256, 256, 256))))
+        );
+        panelBlancoLayout.setVerticalGroup(
+            panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlAqua, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(panelBlancoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblBienvenido)
+                .addGap(30, 30, 30)
+                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPregunta1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlPregunta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
+                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPregunta2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlPregunta2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(panelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPregunta3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlPregunta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(btnEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(panelBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        if (this.btnGroup1.getSelection() != null && btnGroup2.getSelection() != null && btnGroup3.getSelection() != null) {
+
+            String respuesta1 = btnGroup1.getSelection().getActionCommand();
+            //Quitar comillas de la respuesta
+            respuesta1 = respuesta1.replace("\"", "");
+            mEncuesta.setRespuesta1(Integer.parseInt(respuesta1));
+            String respuesta2 = btnGroup2.getSelection().getActionCommand();
+            //Quitar comillas de la respuesta
+            respuesta2 = respuesta2.replace("\"", "");
+            mEncuesta.setRespuesta2(Integer.parseInt(respuesta2));
+            String respuesta3 = btnGroup3.getSelection().getActionCommand();
+            //Quitar comillas de la respuesta
+            respuesta3 = respuesta3.replace("\"", "");
+            mEncuesta.setRespuesta3(Integer.parseInt(respuesta3));
+
+            //Obtener la fecha del sistema
+            DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+            LocalDateTime hoy = LocalDateTime.now();
+
+            //Llenar con datos el nuevo objeto de encuesta para el usuario
+            mEncuesta.setFecha(formatoFecha.format(hoy));
+
+            this.asociarYaLlenoEncuestaAlUsuario();
+
+            JOptionPane.showMessageDialog(this, "Gracias por tus respuestas!. Esta encuesta solo la puedes llenar una vez, asi que deshabilitare esta seccion. La fecha es " + mEncuesta.getFecha());
+
+        } else {
+
+            JOptionPane.showMessageDialog(this, "Debe responder todas las preguntas");
+        }
+
+    }                                         
+
+    private void asociarYaLlenoEncuestaAlUsuario() {
+
+        Iterator<Usuario> iterador = mListaDeUsuarios.iterator();
+
+        while (iterador.hasNext()) {
+
+            Usuario tmpUsuario = iterador.next();
+
+            if (tmpUsuario.getNombre().equals(Main.mUsuario)) {
+
+                tmpUsuario.setHizoEncuestaPersonal(true);
+                tmpUsuario.setAgregarEncuesta(mEncuesta);
+
+                break;
+
+            }
+        }
+
+    }
+
+    
+    public static void main(String args[]) {
+        
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(FrmEncuestaPersonal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(FrmEncuestaPersonal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(FrmEncuestaPersonal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FrmEncuestaPersonal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrmEncuestaPersonal().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton btnEnviar;
+    private javax.swing.ButtonGroup btnGroup1;
+    private javax.swing.ButtonGroup btnGroup2;
+    private javax.swing.ButtonGroup btnGroup3;
+    private javax.swing.ButtonGroup btnGroup4;
+    private javax.swing.ButtonGroup btnGroup5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblBienvenido;
+    private javax.swing.JLabel lblPregunta1;
+    private javax.swing.JLabel lblPregunta2;
+    private javax.swing.JLabel lblPregunta3;
+    private javax.swing.JRadioButton opt1;
+    private javax.swing.JRadioButton opt10;
+    private javax.swing.JRadioButton opt11;
+    private javax.swing.JRadioButton opt12;
+    private javax.swing.JRadioButton opt13;
+    private javax.swing.JRadioButton opt14;
+    private javax.swing.JRadioButton opt15;
+    private javax.swing.JRadioButton opt2;
+    private javax.swing.JRadioButton opt3;
+    private javax.swing.JRadioButton opt4;
+    private javax.swing.JRadioButton opt5;
+    private javax.swing.JRadioButton opt6;
+    private javax.swing.JRadioButton opt7;
+    private javax.swing.JRadioButton opt8;
+    private javax.swing.JRadioButton opt9;
+    private javax.swing.JPanel panelBlanco;
+    private javax.swing.JPanel pnlAqua;
+    private javax.swing.JPanel pnlPregunta1;
+    private javax.swing.JPanel pnlPregunta2;
+    private javax.swing.JPanel pnlPregunta3;
+    // End of variables declaration                   
+}
