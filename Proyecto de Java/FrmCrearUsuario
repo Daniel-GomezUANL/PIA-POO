@@ -1,0 +1,460 @@
+
+package inventariodetienda;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+
+public class FrmCrearUsuario extends javax.swing.JFrame {
+
+    
+    String mNombre;
+    String mPass;
+    String mCorreo;
+    ArrayList<String> mListaRoles;
+    
+    int mCamposVacios = 0;
+
+    
+    public FrmCrearUsuario() {
+        
+        initComponents();
+
+        //Agregar a la lista los roles Administrador y vendedor los cuales se pueden agregar uno o los dos a la vez
+        lstRoles.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = {"Administrador", "Vendedor"};
+            
+            public int getSize() {
+                return strings.length;
+            }
+            
+            public Object getElementAt(int i) {
+                return strings[i];
+            }
+        });
+        jScrollPane1.setViewportView(lstRoles);
+        
+        this.setLocationRelativeTo(null);
+        
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }
+
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        pnlBlanco = new javax.swing.JPanel();
+        lblUsuario = new javax.swing.JLabel();
+        lblPass = new javax.swing.JLabel();
+        txtUsuario = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
+        pnlAqua = new javax.swing.JPanel();
+        btnLimpiar = new javax.swing.JButton();
+        txtPass = new javax.swing.JPasswordField();
+        lblRol = new javax.swing.JLabel();
+        txtCorreo = new javax.swing.JTextField();
+        lblCorreo = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lstRoles = new javax.swing.JList();
+        txtTip = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Creacion de Usuarios");
+        setName("Inicio de sesion"); // NOI18N
+
+        pnlBlanco.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblUsuario.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblUsuario.setText("Usuario");
+
+        lblPass.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblPass.setText("Contraseña");
+
+        txtUsuario.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        btnGuardar.setBackground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
+
+        pnlAqua.setBackground(new java.awt.Color(22, 144, 163));
+
+        javax.swing.GroupLayout pnlAquaLayout = new javax.swing.GroupLayout(pnlAqua);
+        pnlAqua.setLayout(pnlAquaLayout);
+        pnlAquaLayout.setHorizontalGroup(
+            pnlAquaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 51, Short.MAX_VALUE)
+        );
+        pnlAquaLayout.setVerticalGroup(
+            pnlAquaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        btnLimpiar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        lblRol.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblRol.setText("Rol");
+
+        txtCorreo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        lblCorreo.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        lblCorreo.setText("Correo Electrónico");
+
+        jScrollPane1.setViewportView(lstRoles);
+
+        txtTip.setForeground(new java.awt.Color(153, 153, 153));
+        txtTip.setText("La contraseña debe ser mayor a 5, tener al menos una mayuscula y un numero");
+
+        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel1.setText("*");
+
+        jLabel2.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel2.setText("*");
+
+        jLabel3.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel3.setText("*");
+
+        javax.swing.GroupLayout pnlBlancoLayout = new javax.swing.GroupLayout(pnlBlanco);
+        pnlBlanco.setLayout(pnlBlancoLayout);
+        pnlBlancoLayout.setHorizontalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addComponent(pnlAqua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                        .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel1))
+                                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                        .addComponent(lblPass)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel2))
+                                    .addComponent(txtTip)))
+                            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                .addGap(56, 56, 56)
+                                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, 416, Short.MAX_VALUE)))
+                            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(lblRol, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(54, Short.MAX_VALUE))
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlBlancoLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addGap(155, 155, 155))))))
+        );
+        pnlBlancoLayout.setVerticalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel1)))
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblPass)
+                            .addComponent(txtPass, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)))
+                    .addGroup(pnlBlancoLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtTip)
+                .addGap(21, 21, 21)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(lblCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel3))
+                .addGap(31, 31, 31)
+                .addGroup(pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRol, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(63, 63, 63)
+                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(43, 43, 43))
+            .addComponent(pnlAqua, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    /* 
+     El metodo para el boton guardar invoca a 3 metodos: obtenerTexto, guardar y limpiarCampos
+     */
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        this.obtenerTexto();
+
+        //Agregamos la validacion de los campos obligatorios
+        if (mCamposVacios == 0) {
+            
+            boolean esValida = passValida();
+            if (esValida) {
+
+                //Usuario debe ser único
+                boolean esUnico = usuarioEsUnico();
+                
+                if (esUnico) {
+                    this.guardar();
+                    this.limpiarCampos();
+                } else {
+                    JOptionPane.showMessageDialog(this, "El usuario que ingresó ya existe. Intente con otro nombre.");
+                }
+                
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Debe llenar todos los campos obligatorios para poder guardar");
+        }
+
+    }                                          
+
+    /*
+     Boton limpiar invoca 1 metodo: limpiarCampos
+     */
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        this.limpiarCampos();
+    }                                          
+    
+    public boolean usuarioEsUnico() {
+        
+        boolean esUnico = true;
+
+        //Realizamos la busqueda del nombre en el arreglo que tiene los roles
+        Iterator<Usuario> iterador = Main.mListaDeUsuarios.iterator();
+
+        //Usamos un ciclo while para comprobar que el iterador tenga un siguiente objeto
+        while (iterador.hasNext()) {
+
+            //Le asignamos la variable rol para el el iterador deposite lo que tiene en la posicion
+            Usuario usuario = iterador.next();
+
+            //Comparamos si el nombre de ese rol es igual al parametro rol, que al final contiene el nombre que ingresamos en el form que queremos buscar
+            if (usuario.getNombre().equals(mNombre)) {
+
+                //No es unico, porque se encontró
+                esUnico = false;
+            }
+        }
+        
+        return esUnico;
+    }
+    /*
+     Metodo que obtiene: nombre, contraseña, correo electronico y roles de un usuario
+     */
+    
+    public void obtenerTexto() {
+        
+        mCamposVacios = 0;
+        //Validar que campo nombre no esté vacio
+        mNombre = txtUsuario.getText();
+        if (mNombre.equals("")) {
+            
+            mCamposVacios++;
+        }
+
+        //Validar que campo contraseña no esté vacia
+        mPass = txtPass.getText();
+        if (mPass.equals("")) {
+            
+            mCamposVacios++;
+        }
+
+        //Correo es opcional, entonces no validamos si está vacia
+        mCorreo = txtCorreo.getText();
+        
+        if (mCorreo.equals("")) {
+            mCamposVacios++;
+        }
+        
+        mListaRoles = new ArrayList();
+        
+        Object sel = null;
+        
+        int[] selectedIndex = this.lstRoles.getSelectedIndices();
+        
+        for (int i = 0; i < selectedIndex.length; i++) {
+            
+            sel = lstRoles.getModel().getElementAt(selectedIndex[i]);
+            
+            if (sel.equals("Administrador")) {
+                
+                mListaRoles.add("Administrador");
+            }
+            
+            if (sel.equals("Vendedor")) {
+                
+                mListaRoles.add("Vendedor");
+            }
+        }
+        
+    }
+    
+    public boolean passValida() {
+        
+        boolean esValida = true;
+
+        //Contraseña sea mayor a 5 caracteres
+        if (mPass.length() < 5) {
+            
+            JOptionPane.showMessageDialog(this, "La Contraseña debe ser mayor a 5 caracteres.");
+            esValida = false;
+        }
+
+        //Contraseña debe tener al menos una letra mayuscula y un digito (no importando el orden)
+        if (!(mPass.matches("^(?=.*[A-Z])(?=.*[0-9]).*$"))) {
+            JOptionPane.showMessageDialog(this, "La Contraseña debe tener, al menos, una letra mayuscula y un número");
+            esValida = false;
+            
+        }
+        
+        return esValida;
+    }
+
+    /*
+     Metodo que crea un nuevo objeto de la clase Usuario. 
+     */
+    public void guardar() {
+
+//        Rol nuevoRol = new Rol();
+//
+//        //Agregamos el objeto a la lista de roles
+//        Main.mListaDeRoles.add(nuevoRol);
+//
+//        JOptionPane.showMessageDialog(this, "Se guardó el rol con nombre " + mNombre + " exitosamente.");
+        Usuario nuevoUsuario = new Usuario();
+        
+        nuevoUsuario.setNombre(mNombre);
+        nuevoUsuario.setPass(mPass);
+        nuevoUsuario.setCorreoElectronico(mCorreo);
+        nuevoUsuario.setListaRoles(mListaRoles);
+
+        //Agregar el objeto a la lista de usuarios
+        Main.mListaDeUsuarios.add(nuevoUsuario);
+        JOptionPane.showMessageDialog(this, "Se guardó el usuario con nombre " + mNombre + " exitosamente.");
+        
+    }
+
+    /*
+     Metodo que limpia el formulario 
+     */
+    public void limpiarCampos() {
+        
+        this.txtUsuario.setText("");
+        this.txtPass.setText("");
+        this.txtCorreo.setText("");
+        
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(FrmCrearUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(FrmCrearUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(FrmCrearUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(FrmCrearUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrmCrearUsuario().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblPass;
+    private javax.swing.JLabel lblRol;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JList lstRoles;
+    private javax.swing.JPanel pnlAqua;
+    private javax.swing.JPanel pnlBlanco;
+    private javax.swing.JTextField txtCorreo;
+    private javax.swing.JPasswordField txtPass;
+    private javax.swing.JLabel txtTip;
+    private javax.swing.JTextField txtUsuario;
+    // End of variables declaration                   
+}
