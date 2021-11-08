@@ -25,15 +25,21 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 
 entradaDatos() Es un método el cuál será útil para capturar la cantidad de productos que llegan al almacén.
 
-salidaDatos(). Método el cual consiste en registrar la salida de los productos del almacén.
+Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
+Se agrego la clase usuario con metodos privados como mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
 
-Merma(). Es una función que registra la perdida del producto.
+Clase Producto
 
-Stock(). Es la función que te indicará cuantos productos tienes en el almacén de una marca en específica.
+Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
+Se agrego la clase usuario con metodos privados como Double  mPrecio, mEnStock.
 
-Recuperacion(). Esta función está orientada a indicar la cantidad de dinero que debe recuperar del gasto de fabricación.
+Clase Encuesta:
 
-Ganancias(). En este se reportan las ganancias que tuvo al vender los productos.
+Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
+
+Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
+
+Se agrego la clase usuario con metodos privados como Int mStrock.
 
 ----------------------------------------------------------------------------------------------
 ![Diagrama PIA](https://user-images.githubusercontent.com/88561226/132105209-ba5cd599-be7c-4f17-a3f0-88fd3f120f23.png)
