@@ -1,0 +1,561 @@
+
+package inventariodetienda;
+
+import static inventariodetienda.Main.mListaDeUsuarios;
+import java.awt.Image;
+import java.util.Arrays;
+import java.util.Iterator;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class FrmMenuPrincipal extends javax.swing.JFrame {
+
+    public FrmMenuPrincipal() {
+
+        initComponents();
+
+        if (Main.mEsAdmin && Main.mEsVendedor) {
+
+            //Cambiar color a morado
+            pnlFondo.setBackground(new java.awt.Color(170, 113, 208));
+            this.menuInicio.setVisible(true);
+            this.menuProductos.setVisible(true);
+            this.menuUsuarios.setVisible(true);
+            this.menuEstadisticas.setVisible(true);
+
+        } else if (Main.mEsVendedor) {
+
+            //Cambiar color a rojo
+            pnlFondo.setBackground(new java.awt.Color(187, 41, 10));
+            this.menuInicio.setVisible(true);
+            this.menuProductos.setVisible(true);
+            this.menuUsuarios.setVisible(false);
+            this.menuEstadisticas.setVisible(false);
+
+        } else if (Main.mEsAdmin) {
+            //cambiar color a aqua
+            pnlFondo.setBackground(new java.awt.Color(22, 144, 163));
+            this.menuInicio.setVisible(true);
+            this.menuProductos.setVisible(false);
+            this.menuUsuarios.setVisible(true);
+            this.menuEstadisticas.setVisible(true);
+        }
+
+        this.setLocationRelativeTo(null);
+
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        pnlBlanco = new javax.swing.JPanel();
+        lblBienvenido = new javax.swing.JLabel();
+        pnlFondo = new javax.swing.JPanel();
+        barraMenu = new javax.swing.JMenuBar();
+        menuInicio = new javax.swing.JMenu();
+        btnCerrarSesion = new javax.swing.JMenuItem();
+        btnSalir = new javax.swing.JMenuItem();
+        menuProductos = new javax.swing.JMenu();
+        btnAgregarProducto = new javax.swing.JMenuItem();
+        btnModificarProducto = new javax.swing.JMenuItem();
+        btnEliminarProducto = new javax.swing.JMenuItem();
+        btnVerProducto = new javax.swing.JMenuItem();
+        menuEncuesta = new javax.swing.JMenu();
+        btnEncuestaExperienciaApp = new javax.swing.JMenuItem();
+        btnEncuestaPersonal = new javax.swing.JMenuItem();
+        menuUsuarios = new javax.swing.JMenu();
+        btnCrearUsuario = new javax.swing.JMenuItem();
+        btnModificarUsuario = new javax.swing.JMenuItem();
+        btnEliminarUsuario = new javax.swing.JMenuItem();
+        btnVerUsuario = new javax.swing.JMenuItem();
+        menuEstadisticas = new javax.swing.JMenu();
+        btnEstadisticaProductos = new javax.swing.JMenuItem();
+        btnGlobalEncuesta = new javax.swing.JMenuItem();
+        btnPorUsuarioEncuesta = new javax.swing.JMenuItem();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inventario de tienda");
+        setBackground(new java.awt.Color(102, 153, 255));
+        setResizable(false);
+        setSize(new java.awt.Dimension(100, 100));
+
+        pnlBlanco.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblBienvenido.setFont(new java.awt.Font("Perpetua", 0, 48)); // NOI18N
+        lblBienvenido.setText("Bienvenido");
+
+        javax.swing.GroupLayout pnlBlancoLayout = new javax.swing.GroupLayout(pnlBlanco);
+        pnlBlanco.setLayout(pnlBlancoLayout);
+        pnlBlancoLayout.setHorizontalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+        pnlBlancoLayout.setVerticalGroup(
+            pnlBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlBlancoLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(lblBienvenido)
+                .addContainerGap(388, Short.MAX_VALUE))
+        );
+
+        pnlFondo.setBackground(new java.awt.Color(0, 153, 153));
+
+        javax.swing.GroupLayout pnlFondoLayout = new javax.swing.GroupLayout(pnlFondo);
+        pnlFondo.setLayout(pnlFondoLayout);
+        pnlFondoLayout.setHorizontalGroup(
+            pnlFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 385, Short.MAX_VALUE)
+        );
+        pnlFondoLayout.setVerticalGroup(
+            pnlFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        barraMenu.setFont(new java.awt.Font("Perpetua", 0, 36)); // NOI18N
+        barraMenu.setInheritsPopupMenu(true);
+
+        menuInicio.setText("Inicio");
+
+        btnCerrarSesion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        btnCerrarSesion.setText("Cerrar sesion");
+        btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSesionActionPerformed(evt);
+            }
+        });
+        menuInicio.add(btnCerrarSesion);
+
+        btnSalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.CTRL_MASK));
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
+        menuInicio.add(btnSalir);
+
+        barraMenu.add(menuInicio);
+
+        menuProductos.setText("Productos");
+
+        btnAgregarProducto.setText("Agregar Producto");
+        btnAgregarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarProductoActionPerformed(evt);
+            }
+        });
+        menuProductos.add(btnAgregarProducto);
+
+        btnModificarProducto.setText("Modificar Producto");
+        btnModificarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarProductoActionPerformed(evt);
+            }
+        });
+        menuProductos.add(btnModificarProducto);
+
+        btnEliminarProducto.setText("Eliminar Producto");
+        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarProductoActionPerformed(evt);
+            }
+        });
+        menuProductos.add(btnEliminarProducto);
+
+        btnVerProducto.setText("Ver producto");
+        btnVerProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerProductoActionPerformed(evt);
+            }
+        });
+        menuProductos.add(btnVerProducto);
+
+        barraMenu.add(menuProductos);
+
+        menuEncuesta.setText("Encuesta");
+
+        btnEncuestaExperienciaApp.setText("Encuesta experiencia aplicacion");
+        btnEncuestaExperienciaApp.setActionCommand("");
+        btnEncuestaExperienciaApp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEncuestaExperienciaAppActionPerformed(evt);
+            }
+        });
+        menuEncuesta.add(btnEncuestaExperienciaApp);
+
+        btnEncuestaPersonal.setText("Encuesta personal");
+        btnEncuestaPersonal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEncuestaPersonalActionPerformed(evt);
+            }
+        });
+        menuEncuesta.add(btnEncuestaPersonal);
+
+        barraMenu.add(menuEncuesta);
+
+        menuUsuarios.setText("Usuarios");
+
+        btnCrearUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_MASK));
+        btnCrearUsuario.setText("Crear usuario");
+        btnCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearUsuarioActionPerformed(evt);
+            }
+        });
+        menuUsuarios.add(btnCrearUsuario);
+
+        btnModificarUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
+        btnModificarUsuario.setText("Modificar usuario");
+        btnModificarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarUsuarioActionPerformed(evt);
+            }
+        });
+        menuUsuarios.add(btnModificarUsuario);
+
+        btnEliminarUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.CTRL_MASK));
+        btnEliminarUsuario.setText("Eliminar Usuario");
+        btnEliminarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarUsuarioActionPerformed(evt);
+            }
+        });
+        menuUsuarios.add(btnEliminarUsuario);
+
+        btnVerUsuario.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+        btnVerUsuario.setText("Ver Usuario");
+        btnVerUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerUsuarioActionPerformed(evt);
+            }
+        });
+        menuUsuarios.add(btnVerUsuario);
+
+        barraMenu.add(menuUsuarios);
+
+        menuEstadisticas.setText("Estadísticas");
+
+        btnEstadisticaProductos.setText("Productos");
+        btnEstadisticaProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstadisticaProductosActionPerformed(evt);
+            }
+        });
+        menuEstadisticas.add(btnEstadisticaProductos);
+
+        btnGlobalEncuesta.setText("Resultados globales de encuestas");
+        btnGlobalEncuesta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGlobalEncuestaActionPerformed(evt);
+            }
+        });
+        menuEstadisticas.add(btnGlobalEncuesta);
+
+        btnPorUsuarioEncuesta.setText("Resultados por usuario de encuestas");
+        menuEstadisticas.add(btnPorUsuarioEncuesta);
+
+        barraMenu.add(menuEstadisticas);
+
+        setJMenuBar(barraMenu);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pnlBlanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // Salir de todo el sistema
+        this.dispose();
+
+    }                                        
+
+    private void btnModificarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+        // TODO add your handling code here:
+        FrmModificarUsuario frmModificarUsuario = new FrmModificarUsuario();
+        frmModificarUsuario.setVisible(true);
+    }                                                   
+
+    private void btnVerUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        // TODO add your handling code here:
+        JTable tablaResultado = crearTablaUsuarios();
+        JScrollPane sp = new JScrollPane(tablaResultado);
+
+        JFrame frmVerUsuarios = new JFrame();
+
+        frmVerUsuarios.setTitle("Ver Usuarios");
+        frmVerUsuarios.setLocationRelativeTo(null);
+        frmVerUsuarios.add(sp);
+        frmVerUsuarios.setSize(800, 300);
+        frmVerUsuarios.setVisible(true);
+    }                                             
+
+    private void btnAgregarProductoActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+        FrmCrearProducto frmCrearProducto = new FrmCrearProducto();
+        frmCrearProducto.setVisible(true);
+    }                                                  
+
+    private void btnCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        // TODO add your handling code here:
+        FrmCrearUsuario crearUsuario = new FrmCrearUsuario();
+        crearUsuario.setVisible(true);
+    }                                               
+
+    private void btnEliminarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+        FrmEliminarUsuario frmEliminarUsuario = new FrmEliminarUsuario();
+        frmEliminarUsuario.setVisible(true);
+    }                                                  
+
+    private void btnVerProductoActionPerformed(java.awt.event.ActionEvent evt) {                                               
+
+        FrmVerProducto frmVerProducto = new FrmVerProducto();
+        frmVerProducto.setVisible(true);
+
+    }                                              
+
+    private void btnModificarProductoActionPerformed(java.awt.event.ActionEvent evt) {                                                     
+        // TODO add your handling code here:
+        FrmModificarProducto frmModificarProducto = new FrmModificarProducto();
+        frmModificarProducto.setVisible(true);
+    }                                                    
+
+    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+        // TODO add your handling code here:
+        FrmEliminarProducto frmEliminarProducto = new FrmEliminarProducto();
+        frmEliminarProducto.setVisible(true);
+    }                                                   
+
+    private void btnEncuestaExperienciaAppActionPerformed(java.awt.event.ActionEvent evt) {                                                          
+        // TODO add your handling code here:
+      
+       boolean mHizoEncuestaExperiencia =  comprobarSiHizoEncuestaExperiencia();
+        
+        if (mHizoEncuestaExperiencia) {
+
+            JOptionPane.showMessageDialog(this, "Usted ya realizó esta encuesta :).");
+
+        } else {
+            FrmEncuestaExperiencia frmLlenarEncuesta = new FrmEncuestaExperiencia();
+            frmLlenarEncuesta.setVisible(true);
+        }
+    }                                                         
+
+    private boolean comprobarSiHizoEncuestaExperiencia(){
+        
+        boolean mHizoEncuestaExperiencia = false;
+        Iterator<Usuario> iterador = mListaDeUsuarios.iterator();
+
+        while (iterador.hasNext()) {
+
+            Usuario tmpUsuario = iterador.next();
+
+            if (tmpUsuario.getNombre().equals(Main.mUsuario)) {
+
+                mHizoEncuestaExperiencia = tmpUsuario.getHizoEncuestaExperiencia();
+                break;
+
+            }
+        }
+        
+        return mHizoEncuestaExperiencia;
+    }
+    
+    private boolean comprobarSiHizoEncuestaPersonal(){
+        
+        boolean mHizoEncuestaPersonal = false;
+        Iterator<Usuario> iterador = mListaDeUsuarios.iterator();
+
+        while (iterador.hasNext()) {
+
+            Usuario tmpUsuario = iterador.next();
+
+            if (tmpUsuario.getNombre().equals(Main.mUsuario)) {
+
+                mHizoEncuestaPersonal = tmpUsuario.getHizoEncuestaPersonal();
+                break;
+
+            }
+        }
+        
+        return mHizoEncuestaPersonal;
+    }
+    
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        // TODO add your handling code here:
+        this.dispose();
+        FrmLogin frmLogin = new FrmLogin();
+        frmLogin.setVisible(true);
+
+    }                                               
+
+    private void btnEncuestaPersonalActionPerformed(java.awt.event.ActionEvent evt) {                                                    
+        // TODO add your handling code here:
+        boolean mHizoEncuestaPersonal =  comprobarSiHizoEncuestaPersonal();
+        
+        if (mHizoEncuestaPersonal) {
+
+            JOptionPane.showMessageDialog(this, "Usted ya realizó la encuesta personal.");
+
+        } else {
+            FrmEncuestaPersonal frmLlenarEncuesta = new FrmEncuestaPersonal();
+            frmLlenarEncuesta.setVisible(true);
+        }
+    }                                                   
+
+    private void btnEstadisticaProductosActionPerformed(java.awt.event.ActionEvent evt) {                                                        
+        // TODO add your handling code here:
+    }                                                       
+
+    private void btnGlobalEncuestaActionPerformed(java.awt.event.ActionEvent evt) {                                                  
+        // TODO add your handling code here:
+        FrmResultadosGlobalesDeEncuestas resultadosGlobales = new FrmResultadosGlobalesDeEncuestas();
+        resultadosGlobales.setVisible(true);
+    }                                                 
+
+   
+    private JTable crearTablaUsuarios() {
+
+        String columna[] = {"Nombre", "Contraseña", "Correo Electronico", "Roles"};
+
+        DefaultTableModel tablaModelo = new DefaultTableModel(columna, 0);
+
+        for (int i = 0; i < Main.mListaDeUsuarios.size(); i++) {
+
+            String nombre = Main.mListaDeUsuarios.get(i).getNombre();
+            String pass = Main.mListaDeUsuarios.get(i).getPass();
+            //o lo puedo poner con asteriscos, para enmascarar la contraseña
+            pass = "******";
+            String correoElectronico = Main.mListaDeUsuarios.get(i).getCorreoElectronico();
+
+            //Mostraré los roles como una lista separada por comas
+            Object[] listaRoles = Main.mListaDeUsuarios.get(i).getListaRoles().toArray();
+
+            Object[] fila = {nombre, pass, correoElectronico, Arrays.toString(listaRoles)};
+
+            tablaModelo.addRow(fila);
+        }
+
+        JTable tablaUsuario = new JTable(tablaModelo);
+        tablaUsuario.setBounds(0, 30, 100, 200);
+
+        return tablaUsuario;
+
+    }
+
+    private JTable crearTablaProductos() {
+
+        String columna[] = {"Nombre", "Descripción", "Costo", "Precio", "Stock", "Imagen"};
+
+        DefaultTableModel tablaModelo = new DefaultTableModel(columna, 0) {
+            @Override
+            public Class<?> getColumnClass(int column
+            ) {
+                switch (column) {
+                    case 0:
+                    case 1:
+                        return String.class;
+                    case 2:
+                        return String.class;
+                    case 3:
+                        return Double.class;
+                    case 4:
+                        return Double.class;
+                    case 5:
+                        return Integer.class;
+                    case 6:
+                        return ImageIcon.class;
+                    default:
+                        return Object.class;
+                }
+            }
+        };
+
+        for (int i = 0; i < Main.mListaDeProductos.size(); i++) {
+
+            String nombre = Main.mListaDeProductos.get(i).getNombre();
+            String descripcion = Main.mListaDeProductos.get(i).getDescripcion();
+            Double costo = Main.mListaDeProductos.get(i).getCosto();
+            Double precio = Main.mListaDeProductos.get(i).getPrecio();
+            Integer stock = Main.mListaDeProductos.get(i).getEnStock();
+            ImageIcon imagen = Main.mListaDeProductos.get(i).getImagen();
+
+            JLabel lblImagen = new JLabel();
+            lblImagen.setIcon(imagen);
+
+            Object[] fila = {nombre, descripcion, costo, precio, stock, lblImagen};
+
+            tablaModelo.addRow(fila);
+        }
+
+        JTable tablaProductos = new JTable(tablaModelo);
+        tablaProductos.setBounds(0, 30, 100, 200);
+
+        return tablaProductos;
+
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new FrmMenuPrincipal().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JMenuBar barraMenu;
+    private javax.swing.JMenuItem btnAgregarProducto;
+    private javax.swing.JMenuItem btnCerrarSesion;
+    private javax.swing.JMenuItem btnCrearUsuario;
+    private javax.swing.JMenuItem btnEliminarProducto;
+    private javax.swing.JMenuItem btnEliminarUsuario;
+    private javax.swing.JMenuItem btnEncuestaExperienciaApp;
+    private javax.swing.JMenuItem btnEncuestaPersonal;
+    private javax.swing.JMenuItem btnEstadisticaProductos;
+    private javax.swing.JMenuItem btnGlobalEncuesta;
+    private javax.swing.JMenuItem btnModificarProducto;
+    private javax.swing.JMenuItem btnModificarUsuario;
+    private javax.swing.JMenuItem btnPorUsuarioEncuesta;
+    private javax.swing.JMenuItem btnSalir;
+    private javax.swing.JMenuItem btnVerProducto;
+    private javax.swing.JMenuItem btnVerUsuario;
+    private javax.swing.JLabel lblBienvenido;
+    private javax.swing.JMenu menuEncuesta;
+    private javax.swing.JMenu menuEstadisticas;
+    private javax.swing.JMenu menuInicio;
+    private javax.swing.JMenu menuProductos;
+    private javax.swing.JMenu menuUsuarios;
+    private javax.swing.JPanel pnlBlanco;
+    private javax.swing.JPanel pnlFondo;
+    // End of variables declaration                   
+
+}
