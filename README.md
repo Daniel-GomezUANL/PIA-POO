@@ -42,7 +42,7 @@ Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
 Se agrego la clase usuario con metodos privados como Int mStrock.
 
 ----------------------------------------------------------------------------------------------
-![Diagrama PIA](https://user-images.githubusercontent.com/88561226/132105209-ba5cd599-be7c-4f17-a3f0-88fd3f120f23.png)
+[![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
 ------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------
 Listado de cambios  hechos en el repositorio:
