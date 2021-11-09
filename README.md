@@ -1,6 +1,5 @@
 
 # Cerveza-Artesanal
-Avances del pia de POO
 
 # Nombre de los integrantes:
 
@@ -12,8 +11,7 @@ Ingrid Valeria Cordero Elizondo Matricula:1972274
 
 ---------------------------------------------------------------------------------------------
 
-Introducción: ¿Cuál es la problemática o proceso que resolveremos o mejoraremos con una aplicación web?
-
+# Problematica
 
 El Señor Pedro es un emprendedor de cerveza artesanal, registra sus ventas y su inventario en una libreta la cual a veces se le olvida recordar en donde el dejo y también a veces sus ventas no coinciden con el inventario.
 
