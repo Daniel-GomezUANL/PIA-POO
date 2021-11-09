@@ -95,6 +95,43 @@ Se agrego al FrmModificarProducto con método public void guardar.
 
 Se agrego al FrmModificarProducto con método public void limpiarCampos.
 
+# FrmMenuPrincipal
+
+Se agrego al FrmMenuPrincipal con método private void btnSalirActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnModificarUsuarioActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnVerUsuarioActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnAgregarProductoActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnCrearUsuarioActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnEliminarUsuarioActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnVerProductoActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnModificarProductoActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnEliminarProductoActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnEncuestaExperienciaAppActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private boolean comprobarSiHizoEncuestaExperiencia.
+Se agrego al FrmMenuPrincipal con método private boolean comprobarSiHizoEncuestaPersonal.
+
+Se agrego al FrmMenuPrincipal con método private void btnCerrarSesionActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnEncuestaPersonalActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnEstadisticaProductosActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private void btnGlobalEncuestaActionPerformed.
+
+Se agrego al FrmMenuPrincipal con método private JTable crearTablaUsuarios.
+
+Se agrego al FrmMenuPrincipal con método private JTable crearTablaProductos.
+
 
 ----------------------------------------------------------------------------------------------
 [![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
