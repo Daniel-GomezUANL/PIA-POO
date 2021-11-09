@@ -272,6 +272,13 @@ Se agrego al FrmEncuestaPersonal con método public FrmEncuestaPersonal.
 Se agrego al FrmEncuestaPersonal con método private void btnEnviarActionPerformed.
 
 Se agrego al FrmEncuestaPersonal con método private void asociarYaLlenoEncuestaAlUsuario
+# FrmEncuestaExperiencia
+
+Se agrego al FrmEncuestaExperiencia con método public FrmEncuestaExperiencia.
+
+Se agrego al FrmEncuestaExperiencia con método private void btnEnviarActionPerformed.
+
+Se agrego al FrmEncuestaExperiencia con método private void asociarYaLlenoEncuestaAlUsuario.
 
 
 
