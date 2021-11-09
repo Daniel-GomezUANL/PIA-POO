@@ -24,6 +24,9 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 
 # Propuesta técnica:
 
+Clase main:
+Se agrega a la clase main con metodos privados 
+
 Clase Usuario:
 
 Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
