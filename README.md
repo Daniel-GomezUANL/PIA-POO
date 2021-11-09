@@ -23,27 +23,28 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 ----------------------------------------------------------------------------------------------------------------------
 
 # Propuesta técnica:
+# Clase Main: 
 
-Clase main:
-Se agrega a la clase main con metodos privados 
+Se agrego la clase usuario con metodos public como String mUsuario y mPass.
+Se agrego la clase usuario con metodos public como boolean mEsVendedor, mEsAdmin.
 
-Clase Usuario:
+# Clase Usuario:
 
-Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
-Se agrego la clase usuario con metodos privados como mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
+Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico. 
+Se agrego la clase usuario con metodos privados como boolean mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
+Se agrego la clase usuario con metodos privados como ArrayList <Encuesta> mListaEncuestas, <String> mListaRoles.
 
-Clase Producto
+# Clase Producto
 
-Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
-Se agrego la clase usuario con metodos privados como Double  mPrecio, mEnStock.
+Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion. 
+Se agrego la clase usuario con metodos privados como Double mCosto, mPrecio.
+Se agrego la clase usuario con metodos privados como Int mEnStock.
+Se agrego la clase usuario con metodos privados como ImagenIcon mImagen.
 
-Clase Encuesta:
+# Clase Encuesta:
 
-Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
-
-Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
-
-Se agrego la clase usuario con metodos privados como Int mStrock.
+Se agrego la clase usuario con metodos privados como String mNombre, mFecha, mPregunta1, mPregunta2, mPregunta3.
+Se agrego la clase usuario con metodos privados como Int mRespuesta1, mRespuesta2, mRespuesta3.
 
 ----------------------------------------------------------------------------------------------
 [![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
