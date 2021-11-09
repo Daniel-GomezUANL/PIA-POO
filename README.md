@@ -225,6 +225,48 @@ Se agrego al FrmResultadosGlobalesDeEncuestas con método public FrmResultadosGl
 Se agrego al FrmResultadosGlobalesDeEncuestas con método public void llenarConResultadosTabla.
 
 Se agrego al FrmResultadosGlobalesDeEncuestas con método public JFreeChart cargarGraficoResultadoEncuesta.
+# FrmEliminarProducto
+Se agrego al FrmEliminarProducto con método String mNombre.
+
+Se agrego al FrmEliminarProducto con método String mDescripcion.
+
+Se agrego al FrmEliminarProducto con método Double mCosto.
+
+Se agrego al FrmEliminarProducto con método Double mPrecio.
+
+Se agrego al FrmEliminarProducto con método Integer mEnStock.
+
+Se agrego al FrmEliminarProducto con método ImageIcon mImagen.
+
+Se agrego al FrmEliminarProducto con método public FrmEliminarProducto.
+
+Se agrego al FrmEliminarProducto con método private void btnLimpiarActionPerformed.
+
+Se agrego al FrmEliminarProducto con método private void btnEliminarActionPerformed.
+
+Se agrego al FrmEliminarProducto con método public void eliminar.
+
+Se agrego al FrmEliminarProducto con método private void txtCostoKeyTyped.
+
+Se agrego al FrmEliminarProducto con método private void txtStockKeyTyped.
+
+Se agrego al FrmEliminarProducto con método private void txtPrecioKeyTyped.
+
+Se agrego al FrmEliminarProducto con método private void btnExaminarActionPerformed.
+
+Se agrego al FrmEliminarProducto con método private void btnBuscarActionPerformed.
+
+Se agrego al FrmEliminarProducto con método public boolean productoEncontrado.
+
+Se agrego al FrmEliminarProducto con método public boolean productoEsUnico.
+
+Se agrego al FrmEliminarProducto con método public void obtenerTexto.
+
+Se agrego al FrmEliminarProducto con método public void guardar.
+
+Se agrego al FrmEliminarProducto con método public void limpiarCampos.
+
+
 
 
 
