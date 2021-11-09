@@ -186,6 +186,37 @@ Se agrego al FrmVerProducto con método private void txtPrecioKeyTyped.
 Se agrego al FrmVerProducto con método private void btnAnteriorActionPerformed.
 
 Se agrego al FrmVerProducto con método private void btnSiguienteActionPerformed.
+# FrmResultadosGlobalesDeEncuestas
+Se agregoron al FrmResultadosGlobalesDeEncuestas con métodos int:
+    int contadorp1v1 = 0;
+
+    int contadorp1v2 = 0;
+
+    int contadorp1v3 = 0;
+
+    int contadorp1v4 = 0;
+
+    int contadorp1v5 = 0;
+
+    int contadorp2v1 = 0;
+
+    int contadorp2v2 = 0;
+
+    int contadorp2v3 = 0;
+
+    int contadorp2v4 = 0;
+
+    int contadorp2v5 = 0;
+
+    int contadorp3v1 = 0;
+
+    int contadorp3v2 = 0;
+
+    int contadorp3v3 = 0;
+
+    int contadorp3v4 = 0;
+
+    int contadorp3v5 = 0;
 
 
 
