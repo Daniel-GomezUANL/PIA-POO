@@ -118,6 +118,7 @@ Se agrego al FrmMenuPrincipal con método private void btnEliminarProductoAction
 Se agrego al FrmMenuPrincipal con método private void btnEncuestaExperienciaAppActionPerformed.
 
 Se agrego al FrmMenuPrincipal con método private boolean comprobarSiHizoEncuestaExperiencia.
+
 Se agrego al FrmMenuPrincipal con método private boolean comprobarSiHizoEncuestaPersonal.
 
 Se agrego al FrmMenuPrincipal con método private void btnCerrarSesionActionPerformed.
@@ -131,6 +132,7 @@ Se agrego al FrmMenuPrincipal con método private void btnGlobalEncuestaActionPe
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaUsuarios.
 
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaProductos.
+
 
 
 ----------------------------------------------------------------------------------------------
