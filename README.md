@@ -23,7 +23,8 @@ Propuesta técnica: ¿Qué entidades y funcionalidades ejecutarán la aplicació
 
 El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga una organización más avanzada mediante a este programa, para ello el programa tendrá distintas funcionalidades como la entrada y salida de productos, los costos de produccion, las ventas, lo que tiene en el inventario y entre otras cosas.
 
-entradaDatos() Es un método el cuál será útil para capturar la cantidad de productos que llegan al almacén.
+
+Clase Usuario:
 
 Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
 Se agrego la clase usuario con metodos privados como mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
