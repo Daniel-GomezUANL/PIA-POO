@@ -158,6 +158,34 @@ Se agrego al FrmModificarUsuario con método public void modificar.
 Se agrego al FrmModificarUsuario con método public void limpiarCampos.
 
 Se agrego al FrmModificarUsuario con método public void run.
+# FrmVerProducto
+Se agrego al FrmVerProducto con método public String mNombre.
+
+Se agrego al FrmVerProducto con método public String mDescripcion.
+
+Se agrego al FrmVerProducto con método public Integer mPosicionLista = 0.
+
+Se agrego al FrmVerProducto con método public Integer mStock.
+
+Se agrego al FrmVerProducto con método public Double mCosto.
+
+Se agrego al FrmVerProducto con método public Double mPrecio.
+
+Se agrego al FrmVerProducto con método public ImageIcon mImagen.
+
+Se agrego al FrmVerProducto con método public FrmVerProducto.
+
+Se agrego al FrmVerProducto con método public void mostrarProductoEnPosicionActual.
+
+Se agrego al FrmVerProducto con método private void txtCostoKeyTyped.
+
+Se agrego al FrmVerProducto con método private void txtStockKeyTyped.
+
+Se agrego al FrmVerProducto con método private void txtPrecioKeyTyped.
+
+Se agrego al FrmVerProducto con método private void btnAnteriorActionPerformed.
+
+Se agrego al FrmVerProducto con método private void btnSiguienteActionPerformed.
 
 
 
