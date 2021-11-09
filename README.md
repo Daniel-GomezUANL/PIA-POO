@@ -132,6 +132,32 @@ Se agrego al FrmMenuPrincipal con método private void btnGlobalEncuestaActionPe
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaUsuarios.
 
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaProductos.
+# FrmModificarUsuario
+Se agrego al FrmModificarUsuario con método public String mNombre.
+
+Se agrego al FrmModificarUsuario con método public String mPass.
+
+Se agrego al FrmModificarUsuario con método public String mCorreo.
+
+Se agrego al FrmModificarUsuario con método ArrayList<String> mListaRoles.
+
+Se agrego al FrmModificarUsuario con método public FrmModificarUsuario.
+
+Se agrego al FrmModificarUsuario con método private void btnModificarActionPerformed.
+
+Se agrego al FrmModificarUsuario con método private void btnLimpiarActionPerformed.
+
+Se agrego al FrmModificarUsuario con método private void btnBuscarActionPerformed.
+
+Se agrego al FrmModificarUsuario con método public void obtenerTexto.
+
+Se agrego al FrmModificarUsuario con método public boolean usuarioEncontrado.
+
+Se agrego al FrmModificarUsuario con método public void modificar.
+
+Se agrego al FrmModificarUsuario con método public void limpiarCampos.
+
+Se agrego al FrmModificarUsuario con método public void run.
 
 
 
