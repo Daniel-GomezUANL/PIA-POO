@@ -188,6 +188,7 @@ Se agrego al FrmVerProducto con método private void btnAnteriorActionPerformed.
 Se agrego al FrmVerProducto con método private void btnSiguienteActionPerformed.
 # FrmResultadosGlobalesDeEncuestas
 Se agregoron al FrmResultadosGlobalesDeEncuestas con métodos int:
+
     int contadorp1v1 = 0;
 
     int contadorp1v2 = 0;
@@ -217,6 +218,7 @@ Se agregoron al FrmResultadosGlobalesDeEncuestas con métodos int:
     int contadorp3v4 = 0;
 
     int contadorp3v5 = 0;
+
 
 
 
