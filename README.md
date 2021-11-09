@@ -53,6 +53,15 @@ Se agrego la clase usuario con Encuesta privados como String mNombre, mFecha, mP
 
 Se agrego la clase usuario con Encuesta privados como Int mRespuesta1, mRespuesta2, mRespuesta3.
  
+# FrmLogin
+
+Se agrego al FrmLogin con metodos privados void btnIngresarActionPerformed.
+
+Se agrego al FrmLogin con metodos privados void txtPassActionPerformed.
+
+Se agrego al FrmLogin con metodos privados boolean comprobarCredenciales.
+
+Se agrego al FrmLogin con metodos privados void btenerCredenciales.
 
 
 ----------------------------------------------------------------------------------------------
