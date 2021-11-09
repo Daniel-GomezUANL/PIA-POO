@@ -62,6 +62,38 @@ Se agrego al FrmLogin con metodos privados void txtPassActionPerformed.
 Se agrego al FrmLogin con metodos privados boolean comprobarCredenciales.
 
 Se agrego al FrmLogin con metodos privados void btenerCredenciales.
+# FrmModificarProducto
+Se agrego al FrmModificarProducto con métodos public String mNombre, mDescripcion.
+
+Se agrego al FrmModificarProducto con métodos public Double mCosto, mPrecio.
+
+Se agrego al FrmModificarProducto con métodos public Integer mEnStock.
+
+Se agrego al FrmModificarProducto con métodos public ImagenIcon mImagen.
+
+Se agrego al FrmModificarProducto con métodos public void btnModificarActionPerformed.
+
+Se agrego al FrmModificarProducto con métodos public void modificar.
+
+Se agrego al FrmModificarProducto con métodos private void txtCostoKeyTyped.
+
+Se agrego al FrmModificarProducto con métodos private void txtStockKeyTyped.
+
+Se agrego al FrmModificarProducto con métodos private void txtPrecioKeyTyped.
+
+Se agrego al FrmModificarProducto con métodos private void btnExaminarActionPerformed.
+
+Se agrego al FrmModificarProducto con método private void btnBuscarActionPerformed.
+
+Se agrego al FrmModificarProducto con método public boolean productoEncontrado.
+
+Se agrego al FrmModificarProducto con método public boolean productoEsUnico.
+
+Se agrego al FrmModificarProducto con método public void obtenerTexto.
+
+Se agrego al FrmModificarProducto con método public void guardar.
+
+Se agrego al FrmModificarProducto con método public void limpiarCampos.
 
 
 ----------------------------------------------------------------------------------------------
