@@ -265,6 +265,13 @@ Se agrego al FrmEliminarProducto con método public void obtenerTexto.
 Se agrego al FrmEliminarProducto con método public void guardar.
 
 Se agrego al FrmEliminarProducto con método public void limpiarCampos.
+# FrmEncuestaPersonal
+
+Se agrego al FrmEncuestaPersonal con método public FrmEncuestaPersonal.
+
+Se agrego al FrmEncuestaPersonal con método private void btnEnviarActionPerformed.
+
+Se agrego al FrmEncuestaPersonal con método private void asociarYaLlenoEncuestaAlUsuario
 
 
 
