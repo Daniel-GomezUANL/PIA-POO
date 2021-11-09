@@ -17,10 +17,12 @@ El Señor Pedro es un emprendedor de cerveza artesanal, registra sus ventas y su
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-Propuesta técnica: ¿Qué entidades y funcionalidades ejecutarán la aplicación para proporcionar un servicio útil?
-
+# Solucion  propuesta
 El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga una organización más avanzada mediante a este programa, para ello el programa tendrá distintas funcionalidades como la entrada y salida de productos, los costos de produccion, las ventas, lo que tiene en el inventario y entre otras cosas.
 
+----------------------------------------------------------------------------------------------------------------------
+
+# Propuesta técnica:
 
 Clase Usuario:
 
@@ -44,27 +46,5 @@ Se agrego la clase usuario con metodos privados como Int mStrock.
 [![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
 ------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------
-Listado de cambios  hechos en el repositorio:
-
-Clase Usuario:
-
-Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico.
-Se agrego la clase usuario con metodos privados como mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
-
-Clase Producto
-
-Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
-Se agrego la clase usuario con metodos privados como Double  mPrecio, mEnStock.
-
-Clase Encuesta:
-
-Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion.
-
-Se agrego la clase usuario con metodos privados como Double  mCosto, mPrecio.
-
-Se agrego la clase usuario con metodos privados como Int mStrock.
-
-[![Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg](https://i.postimg.cc/9Qh1xXvW/Whats-App-Image-2021-10-21-at-10-12-38-PM.jpg)](https://postimg.cc/7fKgh4Hc)
-
 
 
