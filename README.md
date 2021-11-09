@@ -220,6 +220,12 @@ Se agregoron al FrmResultadosGlobalesDeEncuestas con métodos int:
     int contadorp3v5 = 0;
 
 
+Se agrego al FrmResultadosGlobalesDeEncuestas con método public FrmResultadosGlobalesDeEncuestas.
+
+Se agrego al FrmResultadosGlobalesDeEncuestas con método public void llenarConResultadosTabla.
+
+Se agrego al FrmResultadosGlobalesDeEncuestas con método public JFreeChart cargarGraficoResultadoEncuesta.
+
 
 
 ----------------------------------------------------------------------------------------------
