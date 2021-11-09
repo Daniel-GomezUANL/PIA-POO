@@ -2,7 +2,7 @@
 # Cerveza-Artesanal
 Avances del pia de POO
 
-Nombre de los integrantes:
+# Nombre de los integrantes:
 
 Jorge Daniel Benavides Gómez Matrícula: 1931714
 
