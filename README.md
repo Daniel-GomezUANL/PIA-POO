@@ -26,24 +26,31 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 # Clase Main: 
 
 Se agrego la clase usuario con metodos public como String mUsuario y mPass.
+
 Se agrego la clase usuario con metodos public como boolean mEsVendedor, mEsAdmin.
 
 # Clase Usuario:
 
 Se agrego la clase usuario con metodos privados como String mNombre, mPass, mCorreoElectronico. 
+
 Se agrego la clase usuario con metodos privados como boolean mHizoEncuestaExperiencia, mHizoEncuestaPersonal.
+
 Se agrego la clase usuario con metodos privados como ArrayList <Encuesta> mListaEncuestas, <String> mListaRoles.
 
 # Clase Producto
 
 Se agrego la clase usuario con metodos privados como String mNombre, mDescripcion. 
+
 Se agrego la clase usuario con metodos privados como Double mCosto, mPrecio.
+
 Se agrego la clase usuario con metodos privados como Int mEnStock.
+
 Se agrego la clase usuario con metodos privados como ImagenIcon mImagen.
 
 # Clase Encuesta:
 
 Se agrego la clase usuario con metodos privados como String mNombre, mFecha, mPregunta1, mPregunta2, mPregunta3.
+
 Se agrego la clase usuario con metodos privados como Int mRespuesta1, mRespuesta2, mRespuesta3.
 
 ----------------------------------------------------------------------------------------------
