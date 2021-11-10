@@ -296,6 +296,32 @@ Se agrego al FrmEliminarUsuario con método public boolean usuarioEncontrado.
 Se agrego al FrmEliminarUsuario con método public void eliminar.
 
 Se agrego al FrmEliminarUsuario con método public void limpiarCampos.
+# FrmCrearUsuario
+Se agrego al FrmCrearUsuario con método String mNombre.
+
+Se agrego al FrmCrearUsuario con método String mPass.
+
+Se agrego al FrmCrearUsuario con método String mCorreo.
+
+Se agrego al FrmCrearUsuario con método ArrayList<String> mListaRoles.
+
+Se agrego al FrmCrearUsuario con método int mCamposVacios = 0.
+
+Se agrego al FrmCrearUsuario con método public FrmCrearUsuario.
+
+Se agrego al FrmCrearUsuario con método private void btnGuardarActionPerformed.
+
+Se agrego al FrmCrearUsuario con método private void btnLimpiarActionPerformed.
+
+Se agrego al FrmCrearUsuario con método public boolean usuarioEsUnico.
+
+Se agrego al FrmCrearUsuario con método public void obtenerTexto.
+
+Se agrego al FrmCrearUsuario con método public boolean passValida.
+
+Se agrego al FrmCrearUsuario con método public void guardar.
+
+Se agrego al FrmCrearUsuario con método public void limpiarCampos.	
 
 
 
