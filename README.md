@@ -22,12 +22,9 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 
 ----------------------------------------------------------------------------------------------------------------------
 
-# Propuesta técnica:
+# Propuesta técnica
 Clase Main: 
 
-Se agrego la clase Main con metodos public como String mUsuario y mPass.
-
-Se agrego la clase Main con metodos public como boolean mEsVendedor, mEsAdmin.
 
 # Clase Usuario:
 
@@ -37,7 +34,7 @@ Se agrego la clase usuario con Usuario privados como boolean mHizoEncuestaExperi
 
 Se agrego la clase usuario con Usuario privados como ArrayList <Encuesta> mListaEncuestas, <String> mListaRoles.
 
-# Clase Producto
+# Clase Producto:
 
 Se agrego la clase usuario con Producto privados como String mNombre, mDescripcion. 
 
@@ -53,7 +50,7 @@ Se agrego la clase usuario con Encuesta privados como String mNombre, mFecha, mP
 
 Se agrego la clase usuario con Encuesta privados como Int mRespuesta1, mRespuesta2, mRespuesta3.
  
-# FrmLogin
+# FrmLogin:
 
 Se agrego al FrmLogin con metodos privados void btnIngresarActionPerformed.
 
@@ -62,7 +59,7 @@ Se agrego al FrmLogin con metodos privados void txtPassActionPerformed.
 Se agrego al FrmLogin con metodos privados boolean comprobarCredenciales.
 
 Se agrego al FrmLogin con metodos privados void btenerCredenciales.
-# FrmModificarProducto
+# FrmModificarProducto:
 Se agrego al FrmModificarProducto con métodos public String mNombre, mDescripcion.
 
 Se agrego al FrmModificarProducto con métodos public Double mCosto, mPrecio.
@@ -95,7 +92,7 @@ Se agrego al FrmModificarProducto con método public void guardar.
 
 Se agrego al FrmModificarProducto con método public void limpiarCampos.
 
-# FrmMenuPrincipal
+# FrmMenuPrincipal:
 
 Se agrego al FrmMenuPrincipal con método private void btnSalirActionPerformed.
 
@@ -132,7 +129,7 @@ Se agrego al FrmMenuPrincipal con método private void btnGlobalEncuestaActionPe
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaUsuarios.
 
 Se agrego al FrmMenuPrincipal con método private JTable crearTablaProductos.
-# FrmModificarUsuario
+# FrmModificarUsuario:
 Se agrego al FrmModificarUsuario con método public String mNombre.
 
 Se agrego al FrmModificarUsuario con método public String mPass.
@@ -158,7 +155,7 @@ Se agrego al FrmModificarUsuario con método public void modificar.
 Se agrego al FrmModificarUsuario con método public void limpiarCampos.
 
 Se agrego al FrmModificarUsuario con método public void run.
-# FrmVerProducto
+# FrmVerProducto:
 Se agrego al FrmVerProducto con método public String mNombre.
 
 Se agrego al FrmVerProducto con método public String mDescripcion.
@@ -186,7 +183,7 @@ Se agrego al FrmVerProducto con método private void txtPrecioKeyTyped.
 Se agrego al FrmVerProducto con método private void btnAnteriorActionPerformed.
 
 Se agrego al FrmVerProducto con método private void btnSiguienteActionPerformed.
-# FrmResultadosGlobalesDeEncuestas
+# FrmResultadosGlobalesDeEncuestas:
 Se agregoron al FrmResultadosGlobalesDeEncuestas con métodos int:
 
     int contadorp1v1 = 0;
@@ -225,7 +222,7 @@ Se agrego al FrmResultadosGlobalesDeEncuestas con método public FrmResultadosGl
 Se agrego al FrmResultadosGlobalesDeEncuestas con método public void llenarConResultadosTabla.
 
 Se agrego al FrmResultadosGlobalesDeEncuestas con método public JFreeChart cargarGraficoResultadoEncuesta.
-# FrmEliminarProducto
+# FrmEliminarProducto:
 Se agrego al FrmEliminarProducto con método String mNombre.
 
 Se agrego al FrmEliminarProducto con método String mDescripcion.
@@ -265,7 +262,7 @@ Se agrego al FrmEliminarProducto con método public void obtenerTexto.
 Se agrego al FrmEliminarProducto con método public void guardar.
 
 Se agrego al FrmEliminarProducto con método public void limpiarCampos.
-# FrmEncuestaPersonal
+# FrmEncuestaPersonal:
 
 Se agrego al FrmEncuestaPersonal con método public FrmEncuestaPersonal.
 
@@ -279,7 +276,7 @@ Se agrego al FrmEncuestaExperiencia con método public FrmEncuestaExperiencia.
 Se agrego al FrmEncuestaExperiencia con método private void btnEnviarActionPerformed.
 
 Se agrego al FrmEncuestaExperiencia con método private void asociarYaLlenoEncuestaAlUsuario.
-# FrmEliminarUsuario
+# FrmEliminarUsuario:
 
 Se agrego al FrmEliminarUsuario con método public FrmEliminarUsuario.
 
@@ -296,7 +293,7 @@ Se agrego al FrmEliminarUsuario con método public boolean usuarioEncontrado.
 Se agrego al FrmEliminarUsuario con método public void eliminar.
 
 Se agrego al FrmEliminarUsuario con método public void limpiarCampos.
-# FrmCrearUsuario
+# FrmCrearUsuario:
 Se agrego al FrmCrearUsuario con método String mNombre.
 
 Se agrego al FrmCrearUsuario con método String mPass.
@@ -322,7 +319,7 @@ Se agrego al FrmCrearUsuario con método public boolean passValida.
 Se agrego al FrmCrearUsuario con método public void guardar.
 
 Se agrego al FrmCrearUsuario con método public void limpiarCampos.	
-# FrmCrearProducto
+# FrmCrearProducto:
 	
 Se agrego al FrmCrearProducto con método FrmCrearProducto.
 
