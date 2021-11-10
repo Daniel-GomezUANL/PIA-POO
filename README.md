@@ -279,6 +279,23 @@ Se agrego al FrmEncuestaExperiencia con método public FrmEncuestaExperiencia.
 Se agrego al FrmEncuestaExperiencia con método private void btnEnviarActionPerformed.
 
 Se agrego al FrmEncuestaExperiencia con método private void asociarYaLlenoEncuestaAlUsuario.
+# FrmEliminarUsuario
+
+Se agrego al FrmEliminarUsuario con método public FrmEliminarUsuario.
+
+Se agrego al FrmEliminarUsuario con método private void btnEliminarActionPerformed.
+
+Se agrego al FrmEliminarUsuario con método private void btnLimpiarActionPerformed.
+
+Se agrego al FrmEliminarUsuario con método private void btnBuscarActionPerformed.
+
+Se agrego al FrmEliminarUsuario con método public void obtenerTexto.
+
+Se agrego al FrmEliminarUsuario con método public boolean usuarioEncontrado.
+
+Se agrego al FrmEliminarUsuario con método public void eliminar.
+
+Se agrego al FrmEliminarUsuario con método public void limpiarCampos.
 
 
 
