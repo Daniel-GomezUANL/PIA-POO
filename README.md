@@ -23,8 +23,6 @@ El programa tiene como funcionalidad el poder hacer que el señor Pedro tenga un
 ----------------------------------------------------------------------------------------------------------------------
 
 # Propuesta técnica
-Clase Main: 
-
 
 # Clase Usuario:
 
