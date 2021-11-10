@@ -322,6 +322,45 @@ Se agrego al FrmCrearUsuario con método public boolean passValida.
 Se agrego al FrmCrearUsuario con método public void guardar.
 
 Se agrego al FrmCrearUsuario con método public void limpiarCampos.	
+# FrmCrearProducto
+	
+Se agrego al FrmCrearProducto con método FrmCrearProducto.
+
+Se agrego al FrmCrearProducto con métodos public:
+
+    String mNombre.
+
+    String mDescripcion.
+
+    Double mCosto.
+
+    Double mPrecio.
+
+    Integer mEnStock.
+
+    ImageIcon mImagen.
+
+Se agrego al FrmCrearProducto con métodos public FrmCrearProducto.
+
+Se agrego al FrmCrearProducto con métodos private void btnLimpiarActionPerformed.
+
+Se agrego al FrmCrearProducto con métodos private void btnGuardarActionPerformed.
+
+Se agrego al FrmCrearProducto con métodos private void txtCostoKeyTyped.
+
+Se agrego al FrmCrearProducto con métodos private void txtPrecioKeyTyped.
+
+Se agrego al FrmCrearProducto con métodos private void txtStockKeyTyped.
+
+Se agrego al FrmCrearProducto con métodos private void btnExaminarActionPerformed.
+
+Se agrego al FrmCrearProducto con métodos public boolean productoEsUnico.
+
+Se agrego al FrmCrearProducto con métodos public void obtenerTexto.
+
+Se agrego al FrmCrearProducto con métodos public void guardar.
+
+Se agrego al FrmCrearProducto con métodos public void limpiarCampos.
 
 
 
